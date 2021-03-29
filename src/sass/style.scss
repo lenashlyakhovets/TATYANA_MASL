@@ -1,0 +1,18 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/font';
+
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@import 'blocks/promo';
