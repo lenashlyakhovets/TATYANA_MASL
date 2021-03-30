@@ -1,0 +1,13 @@
+.promo {
+    min-height: 100vh;
+    position: relative;
+    background: url(../img/main_bg.jpg) no-repeat 50%/cover;
+    padding-top: 250px;
+    &__subtitle {
+        color: #444;
+        margin: 10px 0 20px 0;
+        font-size: 22px;
+        font-weight: 500;
+    }  
+}
+    

@@ -1,0 +1,15 @@
+.hamburger {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    right: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    cursor: pointer;
+    .box {
+        background-color:#333;
+    }
+}
