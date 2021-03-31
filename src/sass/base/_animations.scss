@@ -1,0 +1,12 @@
+@keyframes letteranimated {
+    from {
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+    to {
+        opacity: 1;
+        transform: rotateY(0);
+        filter: blur(0px);
+    }
+}
