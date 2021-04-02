@@ -34,7 +34,7 @@
         text-transform: uppercase;        
         &:hover {  
             transition: 0.5s all;  
-            color: #fff;
+            color: $second-color;
             background-color: $main-color;
             box-shadow: 4px 4px 20px $main-color;
             border: none;          
