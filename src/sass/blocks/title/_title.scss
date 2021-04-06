@@ -1,9 +1,13 @@
 .title {
-    color: $main-color;
+    color: $second-color;
     font-size: 64px;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 0;
+    &_shadow {
+        color: $main-color;
+        text-shadow: $second-color 9px 3px 9px;
+    }
     &_fz42 {
         font-size: 42px;
     }
