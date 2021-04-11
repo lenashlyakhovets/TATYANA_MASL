@@ -44,6 +44,7 @@
     <meta name="msapplication-TileImage" content="icons/favicon//ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -53,19 +54,19 @@
             <nav>
                 <ul class="menu__list">
                     <li class="menu__link">
-                        <a href="#wedding">Свадебные</a>
+                        <a href="#tab1">Свадебные</a>
                     </li>
                     <li class="menu__link">
-                        <a href="#lovestory">Love story</a>
+                        <a href="#tab2">Love story</a>
                     </li>
                     <li class="menu__link">
-                        <a href="#family">Семейные</a>
+                        <a href="#tab3">Семейные</a>
                     </li>
                     <li class="menu__link">
-                        <a href="#individual">Индивидуальные</a>
+                        <a href="#tab4">Индивидуальные</a>
                     </li>
                     <li class="menu__link">
-                        <a href="#baptism">Крещение</a>
+                        <a href="#tab5">Крещение</a>
                     </li>
                     <li class="menu__link">
                         <a href="#author">Об авторе</a>
@@ -128,54 +129,127 @@
     <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="title title_fz42">Портфолио</h2>
-            <ul class="portfolio__categories">
-                <li class="portfolio__cat portfolio__cat_active" id="wedding">
+            <ul class="portfolio__tabs">
+                <li class="portfolio__tab portfolio__tab_active" id="tab1">
                     Свадебные
                 </li>
-                <li class="portfolio__cat" id="lovestory">
+                <li class="portfolio__tab" id="tab2">
                     Love story
                 </li>
-                <li class="portfolio__cat" id="family">
+                <li class="portfolio__tab" id="tab3">
                     Семейные
                 </li>
-                <li class="portfolio__cat" id="individual">
+                <li class="portfolio__tab" id="tab4">
                     Индивидуальные
                 </li>
-                <li class="portfolio__cat" id="baptism">
+                <li class="portfolio__tab" id="tab5">
                     Крещение
                 </li>
             </ul>
             
             <!-- Свадебные -->
             <div class="portfolio__content portfolio__content_active">
-                <div class="portfolio-item">
-                    <div class="portfolio-item__wrapper">
-                        <img src="img/1_Свадебные/1-smallW.JPG" alt="1-smallW" class="portfolio-item__img">
-                        <img src="img/1_Свадебные/2-smallW.JPG" alt="2-smallW" class="portfolio-item__img">
-                        <img src="img/1_Свадебные/3-smallW.JPG" alt="3-smallW" class="portfolio-item__img">
-                        <img src="img/1_Свадебные/4-smallW.JPG" alt="4-smallW" class="portfolio-item__img">
-                        <img src="img/1_Свадебные/5-smallW.JPG" alt="5-smallW" class="portfolio-item__img">
-                    </div>
-                </div>
-
-
+                <a data-fancybox="gallery" href="img/1_Свадебные/1-bigW.JPG" class="portfolio__item">
+                    <img src="img/1_Свадебные/1-smallW.JPG" alt="1-smallW">
+                </a>
+                <a data-fancybox="gallery" href="img/1_Свадебные/2-bigW.JPG" class="portfolio__item">
+                    <img src="img/1_Свадебные/2-smallW.JPG" alt="2-smallW">
+                </a>
+                <a data-fancybox="gallery" href="img/1_Свадебные/3-bigW.JPG" class="portfolio__item">
+                    <img src="img/1_Свадебные/3-smallW.JPG" alt="3-smallW">
+                </a>
+                <a data-fancybox="gallery" href="img/1_Свадебные/4-bigW.JPG" class="portfolio__item">
+                    <img src="img/1_Свадебные/4-smallW.JPG" alt="4-smallW">
+                </a>
+                <a data-fancybox="gallery" href="img/1_Свадебные/5-bigW.JPG" class="portfolio__item">
+                    <img src="img/1_Свадебные/5-smallW.JPG" alt="5-smallW">
+                </a>
             </div>
 
             <!-- Love story -->
-            
-            
+            <div class="portfolio__content">
+                <a data-fancybox="gallery" href="img/2_LoveStory/1-bigL.JPG" class="portfolio__item">
+                    <img src="img/2_LoveStory/1-smallL.JPG" alt="1-smallL">
+                </a>
+                <a data-fancybox="gallery" href="img/2_LoveStory/2-bigL.JPG" class="portfolio__item">
+                    <img src="img/2_LoveStory/2-smallL.JPG" alt="2-smallL">
+                </a>
+                <a data-fancybox="gallery" href="img/2_LoveStory/3-bigL.JPG" class="portfolio__item">
+                    <img src="img/2_LoveStory/3-smallL.JPG" alt="3-smallL">
+                </a>
+                <a data-fancybox="gallery" href="img/2_LoveStory/4-bigL.JPG" class="portfolio__item">
+                    <img src="img/2_LoveStory/4-smallL.JPG" alt="4-smallL">
+                </a>
+                <a data-fancybox="gallery" href="img/2_LoveStory/5-bigL.JPG" class="portfolio__item">
+                    <img src="img/2_LoveStory/5-smallL.JPG" alt="5-smallL">
+                </a>
+            </div>
+
             <!-- Семейные -->
-            
+            <div class="portfolio__content">
+                <a data-fancybox="gallery" href="img/3_Семейные/1-bigF.JPG" class="portfolio__item">
+                    <img src="img/3_Семейные/1-smallF.JPG" alt="1-smallF">
+                </a>
+                <a data-fancybox="gallery" href="img/3_Семейные/2-bigF.JPG" class="portfolio__item">
+                    <img src="img/3_Семейные/2-smallF.JPG" alt="2-smallF">
+                </a>
+                <a data-fancybox="gallery" href="img/3_Семейные/3-bigF.JPG" class="portfolio__item">
+                    <img src="img/3_Семейные/3-smallF.JPG" alt="3-smallF">
+                </a>
+                <a data-fancybox="gallery" href="img/3_Семейные/4-bigF.JPG" class="portfolio__item">
+                    <img src="img/3_Семейные/4-smallF.JPG" alt="4-smallF">
+                </a>
+                <a data-fancybox="gallery" href="img/3_Семейные/5-bigF.JPG" class="portfolio__item">
+                    <img src="img/3_Семейные/5-smallF.JPG" alt="5-smallF">
+                </a>
+            </div>
             
             <!-- Индивидуальные -->
-            
+            <div class="portfolio__content">
+                <a data-fancybox="gallery" href="img/4_Индивидуальные/1-bigI.JPG" class="portfolio__item">
+                    <img src="img/4_Индивидуальные/1-smallI.JPG" alt="1-smallI">
+                </a>
+                <a data-fancybox="gallery" href="img/4_Индивидуальные/2-bigI.JPG" class="portfolio__item">
+                    <img src="img/4_Индивидуальные/2-smallI.JPG" alt="2-smallI">
+                </a>
+                <a data-fancybox="gallery" href="img/4_Индивидуальные/3-bigI.JPG" class="portfolio__item">
+                    <img src="img/4_Индивидуальные/3-smallI.JPG" alt="3-smallI">
+                </a>
+                <a data-fancybox="gallery" href="img/4_Индивидуальные/4-bigI.JPG" class="portfolio__item">
+                    <img src="img/4_Индивидуальные/4-smallI.JPG" alt="4-smallI">
+                </a>
+                <a data-fancybox="gallery" href="img/4_Индивидуальные/5-bigI.JPG" class="portfolio__item">
+                    <img src="img/4_Индивидуальные/5-smallI.JPG" alt="5-smallI">
+                </a>
+            </div>
             
             <!-- Крещение -->
-            
+            <div class="portfolio__content">
+                <a data-fancybox="gallery" href="img/5_Крещение/1-bigB.JPG" class="portfolio__item">
+                    <img src="img/5_Крещение/1-smallB.JPG" alt="1-smallB">
+                </a>
+                <a data-fancybox="gallery" href="img/5_Крещение/2-bigB.JPG" class="portfolio__item">
+                    <img src="img/5_Крещение/2-smallB.JPG" alt="2-smallB">
+                </a>
+                <a data-fancybox="gallery" href="img/5_Крещение/3-bigB.JPG" class="portfolio__item">
+                    <img src="img/5_Крещение/3-smallB.JPG" alt="3-smallB">
+                </a>
+                <a data-fancybox="gallery" href="img/5_Крещение/4-bigB.JPG" class="portfolio__item">
+                    <img src="img/5_Крещение/4-smallB.JPG" alt="4-smallB">
+                </a>
+                <a data-fancybox="gallery" href="img/5_Крещение/5-bigB.JPG" class="portfolio__item">
+                    <img src="img/5_Крещение/5-smallB.JPG" alt="5-smallB">
+                </a>
+            </div>            
         </div>             
     
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    
     <script src="js/script.js"></script>
+
 </body>
 </html>
