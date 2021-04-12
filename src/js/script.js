@@ -44,5 +44,11 @@ $(document).ready(function(){
     $('a[href*="#tab"]').click(function() {
         var tabIndex = $(this).attr('href').replace(/(.*)#tab/, '')-1;
         $('ul.portfolio__tabs li').eq(tabIndex).click();
-    });
+    });    
 });
+
+const classActive = document.querySelector('#tab1');
+    function activeTab() {
+        classActive.classList.add('portfolio__content_active');
+    }
+    activeTab();
