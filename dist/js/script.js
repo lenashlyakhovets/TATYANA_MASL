@@ -30,26 +30,19 @@ menuLink.forEach(item => {
     })
 });
 
+
 $(document).ready(function(){
     $('ul.portfolio__tabs').on('click', 'li:not(.portfolio__tab_active)', function() {
         $(this)
           .addClass('portfolio__tab_active').siblings().removeClass('portfolio__tab_active')
           .closest('div.container').find('div.portfolio__content').removeClass('portfolio__content_active').eq($(this).index()).addClass('portfolio__content_active');
     });
+
+    var tabIndex = window.location.hash.replace('#tab','')-1;
+    if (tabIndex != -1) $('ul.portfolio__tabs li').eq(tabIndex).click();
+
+    $('a[href*="#tab"]').click(function() {
+        var tabIndex = $(this).attr('href').replace(/(.*)#tab/, '')-1;
+        $('ul.portfolio__tabs li').eq(tabIndex).click();
+    });
 });
-
-// $(document).ready(function(){
-//     $('ul.portfolio__tabs').on('click', 'li:not(.portfolio__tab_active)', function() {
-//         $(this)
-//           .addClass('portfolio__tab_active').siblings().removeClass('portfolio__tab_active')
-//           .closest('div.container').find('div.portfolio__content').removeClass('portfolio__content_active').eq($(this).index()).addClass('portfolio__content_active');
-//     });
-
-//     var tabIndex = window.location.hash.replace('#tab','')-1;
-//     if (tabIndex != -1) $('ul.portfolio__tabs li').eq(tabIndex).click();
-
-//     $('a[href*=#tab]').click(function() {
-//         var tabIndex = $(this).attr('href').replace(/(.*)#tab/, '')-1;
-//         $('ul.portfolio__tabs li').eq(tabIndex).click();
-//     });
-// });
