@@ -31,6 +31,8 @@ menuLink.forEach(item => {
 });
 
 
+
+
 $(document).ready(function(){
     $('ul.portfolio__tabs').on('click', 'li:not(.portfolio__tab_active)', function() {
         $(this)
