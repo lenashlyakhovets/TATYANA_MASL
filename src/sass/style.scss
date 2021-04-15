@@ -1,6 +1,6 @@
 @import 'libs/bootstrap-reboot.min';
 @import 'libs/font';
-@import 'libs/jquery.fancybox.min';
+// @import 'libs/jquery.fancybox.min';
 
 @import 'base/variables';
 @import 'base/mixins';
@@ -24,9 +24,11 @@
 @import 'blocks/menu/menu';
 @import 'blocks/social/social';
 @import 'blocks/portfolio/portfolio';
+@import 'blocks/about/about';
 @import 'blocks/promo/promoMedia';
 @import 'blocks/hamburger/hamburgerMedia';
 @import 'blocks/title/titleMedia';
 @import 'blocks/menu/menuMedia';
 @import 'blocks/social/socialMedia';
 @import 'blocks/portfolio/portfolioMedia';
+@import 'blocks/about/aboutMedia';
