@@ -19,7 +19,7 @@
             height: 100%;
             object-fit: cover;
         }
-    }
+    }   
     &__dscr {
         font-size: 15px;
         color: $third-color;
@@ -27,5 +27,15 @@
     &__text {
         font-size: 15px;
         color: $third-color;
+    }
+    &__social {
+        margin-top: 25px;
+        display: flex;        
+        justify-content: center;
+        align-items: center;
+    }    
+    &__link {
+        text-decoration: none;
+        font-size: 24px;     
     }
 }
