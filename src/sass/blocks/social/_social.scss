@@ -5,3 +5,11 @@ span.icon-instagram {
         color: #8585CC;            
     }
 }
+
+span.icon-instagram__contacts {
+    font-size: 22px;   
+    color: $third-color;
+    &:hover {
+        color: $third-color;            
+    }
+}
